@@ -66,11 +66,11 @@ body {
 }
 
 .topnav li a:hover:not(.selected) {
-    background-color: #111;
+    background-color: #535354;
 }
 
 .selected {
-    background-color: #4CAF50;
+    background-color: #535354;
 }
 
 /* style content */
