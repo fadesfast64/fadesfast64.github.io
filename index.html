@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Snake Game</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Me!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #prankButton {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #prankButton:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <script src="script.js"></script>
+    <button id="prankButton">Click This</button>
+
+    <script>
+        document.getElementById('prankButton').addEventListener('click', function() {
+            setTimeout(function() {
+                alert("Got my bitch trained!");
+            }, 100);
+        });
+    </script>
 </body>
 </html>
